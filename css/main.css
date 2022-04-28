@@ -1,0 +1,23 @@
+
+a{
+  display: block;
+  color:#000000;
+  text-decoration: none;
+  padding: 15px;
+
+}
+ul li{
+  display: inline-block;
+  width: 150px;
+
+  text-align: center;
+}
+
+body{
+
+}
+
+#header
+{
+  background-color: #ddf6ff;
+}
