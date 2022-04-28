@@ -1,5 +1,4 @@
 
-<<<<<<< HEAD
 .title{
   text-align: left;
   border-bottom:solid 2px #000;
@@ -10,8 +9,6 @@ body{
   background-color: #e0f4ff;
 }
 
-=======
->>>>>>> 34d0961f7cd58733ef842eade8122506f92e2f7f
 a{
   display: block;
   color:#000000;
@@ -24,12 +21,9 @@ ul li{
   display: inline-block;
 }
 
-<<<<<<< HEAD
-=======
 body{
 
 }
->>>>>>> 34d0961f7cd58733ef842eade8122506f92e2f7f
 
 #header
 {
@@ -41,8 +35,5 @@ body{
 #header:hover
 {
   background-color: #bcdde9;
-<<<<<<< HEAD
 
-=======
->>>>>>> 34d0961f7cd58733ef842eade8122506f92e2f7f
 }
