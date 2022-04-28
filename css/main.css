@@ -1,3 +1,4 @@
+
 .title{
   text-align: left;
   border-bottom:solid 2px #000;
@@ -6,4 +7,30 @@
 
 body{
   background-color: #e0f4ff;
+}
+
+a{
+  display: block;
+  color:#000000;
+  text-decoration: none;
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+}
+ul li{
+  display: inline-block;
+}
+
+
+#header
+{
+  background-color: #ddf6ff;
+  border-radius: 50px;
+  text-align: center;
+  line-height: 100px;
+}
+#header:hover
+{
+  background-color: #bcdde9;
+
 }
