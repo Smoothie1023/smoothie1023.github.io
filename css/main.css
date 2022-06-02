@@ -1,39 +1,115 @@
 
 .title{
-  text-align: left;
   border-bottom:solid 2px #000;
+  border-right: solid 4px #000;
+  padding-left: 10%;
+  padding-right: 10%;
+  font-size: 50px;
+  background-color: #ffb78a;
+  color: #fff;
+}
+.title img{
+  position:relative;
+  top: 10px;
 }
 
-
-body{
-  background-color: #e0f4ff;
+.subtitle{
+  margin-left: 10%;
+  margin-right: 10%;
+  border-bottom: solid 2px #000;
+  border-right: solid 4px #000;
 }
 
-a{
-  display: block;
-  color:#000000;
-  text-decoration: none;
-  width: 100px;
-  height: 100px;
-  border-radius: 50px;
+.content{
+  margin-left: 10%;
+  margin-right: 10%;
 }
-ul li{
+
+.update{
+  margin-left: 10%;
+  margin-right: 10%;
+  height:100px;
+  overflow: scroll;
+  border: solid 2px #000;
+  background-color: #eee;
+}
+.update li{
+  text-decoration: underline;
+}
+
+.button {
+    display: inline-block;
+
+}
+.button a{
+  background: #eee;
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 auto;
+  padding: 10px 25px;
+  color: #313131;
+  transition: 0.3s ease-in-out;
+  font-weight: 500;
+  z-index:0;
+}
+.button a:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 0;
+    display: block;
+    background: #ffb78a;
+    transition: .3s;
+    left:0;
+}
+.button a:hover{
+  color:#fff;
+}
+.button a:hover:before {
+    width: 100%;
+    z-index: -1;
+}
+
+.comingsoon{
   display: inline-block;
+  text-decoration: line-through;
+}
+.comingsoon a{
+  background: #555555;
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 auto;
+  padding: 10px 25px;
+  color:#9f9f9f;
+  transition: 0.3s ease-in-out;
+  font-weight: 500;
+  z-index:0;
+
 }
 
-body{
+
+ul li{
+  list-style: none;
 
 }
 
-#header
+
+#item
 {
-  background-color: #ddf6ff;
-  border-radius: 50px;
-  text-align: center;
-  line-height: 100px;
-}
-#header:hover
-{
-  background-color: #bcdde9;
+  font-size: 25px;
+  text-decoration: none;
+  width: 200px;
+  height: 100px;
 
+}
+
+#update-year{
+  font-size: 20px;
+  text-decoration: none;
+  border-bottom: solid 2px #000;
 }
