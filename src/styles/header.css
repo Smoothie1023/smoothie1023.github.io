@@ -1,0 +1,16 @@
+.logo-image{
+    position:relative;
+    top: 10px;
+    width: 70px;
+}
+
+.title{
+    border-bottom:solid 2px #000;
+    border-right: solid 4px #000;
+    padding-left: 10%;
+    padding-right: 10%;
+    font-size: 50px;
+    background-color: #ffb78a;
+    color: #fff;
+}
+
