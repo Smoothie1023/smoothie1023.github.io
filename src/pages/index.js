@@ -20,15 +20,11 @@ export default function Home() {
       <h2 className="subTitle">
         Link
       </h2>
-      <div class="content">
-        <ul>
-          <li class="button"><a id="item" href="https://github.com/smoothie1023" target="_blank"> Github</a></li>
-          <li class="button"><a id="item"href="https://twitter.com/Smoothie1023" target="_blank"> Twitter</a></li>
-        </ul>
-        <ul>
-          <li class="button"><a id="item" href="blog"> Blog</a></li>
-          <li class="button"><a id="item" href="https://www.pixiv.net/users/17647757 " target="_blank"> Pixiv</a></li>
-        </ul>
+      <div class="LinkButton">
+        <div class="button"><a id="item" href="https://github.com/smoothie1023" target="noopener noreferrer"> Github</a></div>
+        <div class="button"><a id="item"href="https://twitter.com/Smoothie1023" target="noopener noreferrer"> Twitter</a></div>
+        <div class="button"><a id="item" href="blog"> Blog</a></div>
+        <div class="button"><a id="item" href="https://www.pixiv.net/users/17647757 " target="noopener noreferrer"> Pixiv</a></div>
       </div>
 
     </Layout>

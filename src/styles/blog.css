@@ -1,0 +1,17 @@
+article{
+    margin:10%;
+    display: block;
+    border-left: solid 10px #ffb78a;
+    border-bottom: solid 2px #000;
+    border-right: solid 4px #000;
+}
+
+a{
+    text-decoration-line:none;
+    color: #000;
+}
+
+footer{
+    text-align: right;
+    color:gray;
+}

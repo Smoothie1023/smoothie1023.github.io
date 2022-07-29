@@ -1,10 +1,13 @@
 .logo-image{
     position:relative;
-    top: 10px;
+    top:3px;
     width: 70px;
+    display: inline-block;
 }
 
+
 .title{
+    display: inline-block;
     border-bottom:solid 2px #000;
     border-right: solid 4px #000;
     padding-left: 10%;
