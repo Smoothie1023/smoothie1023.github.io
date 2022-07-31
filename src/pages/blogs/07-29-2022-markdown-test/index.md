@@ -2,10 +2,16 @@
 path: '/blogs/markdown-test'
 date: 2022-07-29
 title: 'マークダウンテスト'
----
+cate:
+    - category
+tags: 
+    - test
+    - wow
 
-テキストの装飾
-* * *
+---
+***
+# テキストの装飾
+***
 # 見出し
 
 # H1 tag
@@ -15,7 +21,7 @@ title: 'マークダウンテスト'
 ##### h5 tag
 ###### h6 tag
 
-* * *
+***
 # 強調・強勢・打ち消し線
 
 _italic_
@@ -26,7 +32,7 @@ __太字__
 
 _**~~Full~~**_
 
-* * *
+***
 # 折りたたみ
 
 <details><summary>テスト</summary>
@@ -34,7 +40,7 @@ _**~~Full~~**_
 みちゃいやーん
 </details>
 
-* * *
+***
 # リスト
 
 * リスト
@@ -48,7 +54,7 @@ _**~~Full~~**_
 4. 2. ネスト
 4. 3. ネスト
 
-* * *
+***
 # 説明リスト
 
 <dl>
@@ -56,13 +62,12 @@ _**~~Full~~**_
     <dd>内容<strong>装飾</strong>はHTMLタグで</dd>
 </dl>
 
-* * *
-
+***
 # チャックボックス
 
 - [ ] タスク1
 - [x] タスク2
-* * *
+***
 # 引用
 > 引用はしっかりと引用元を書き、原文ママ載せよう。
 >> ネストして引用もできる
@@ -78,4 +83,24 @@ _**~~Full~~**_
 
 ***
 # 画像埋め込み
-![ALT](src/pages/blogs/07-29-2022-markdown-test/test.png "マウスホバー")
+![ALT](./test.png "マウスホバー")
+
+***
+# コード関連
+`インライン表示`
+
+```
+const test = "example";
+```
+プログラミング言語指定とタイトル指定
+```python:title=test.py
+for i in range(10):
+    print(str(i))
+```
+
+```c{2}:title=test.c
+void test(){
+    printf("test daze");
+    return 0;
+}
+```

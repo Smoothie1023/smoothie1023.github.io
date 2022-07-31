@@ -1,6 +1,5 @@
 import React from "react"
 import Layout from "../components/layout"
-import Update from "../components/update"
 import "../styles/style.css"
 
 
@@ -23,10 +22,9 @@ export default function Home() {
       <div class="LinkButton">
         <div class="button"><a id="item" href="https://github.com/smoothie1023" target="noopener noreferrer"> Github</a></div>
         <div class="button"><a id="item"href="https://twitter.com/Smoothie1023" target="noopener noreferrer"> Twitter</a></div>
-        <div class="button"><a id="item" href="blog"> Blog</a></div>
+        <div class="button"><a id="item" href="blogs"> Blog</a></div>
         <div class="button"><a id="item" href="https://www.pixiv.net/users/17647757 " target="noopener noreferrer"> Pixiv</a></div>
       </div>
-
     </Layout>
   )
 }

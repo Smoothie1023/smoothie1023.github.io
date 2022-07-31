@@ -5,7 +5,6 @@
  */
 
 module.exports = {
-
   siteMetadata:{
     siteName:'スムージーの備忘録',
     siteDescription:'ポートフォリオ兼得た知見をまとめるブログ',
@@ -14,6 +13,7 @@ module.exports = {
   },
   /* Your site config here */
   plugins: [
+    "gatsby-remark-copy-linked-files",
     "gatsby-plugin-image",
     "gatsby-plugin-sharp",
     "gatsby-plugin-react-helmet",
@@ -47,6 +47,22 @@ module.exports = {
       options:{
         path:`${__dirname}/src/pages`,
         name:'pages',
+      }
+    },
+    {
+    resolve:`gatsby-plugin-nprogress`,
+    options:{
+      color:`#a3621c`,
+      minimum:1,
+      easing:'liner',
+      positionUsing:'',
+      speed:200,
+      trickle:true,
+      trickleSpeed:200,
+      barSelector:'[role="bar"]',
+      spinnerSelector:'[role="spinner"]',
+      parent:'body',
+      template: '<div class="bar" role="bar"><div class="peg"></div></div><div class="spinner" role="spinner"><div class="spinner-icon"></div></div>'
       }
     },
     {

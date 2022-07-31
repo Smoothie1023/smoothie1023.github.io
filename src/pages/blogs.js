@@ -5,7 +5,6 @@ import { graphql ,Link} from 'gatsby';
 /*import { siteMetadata } from "../../gatsby-config"*/
 
 export default function Blog({data}){
-    console.log( data.allMarkdownRemark);
     return(
         <Layout>
             <h2 className="subTitle">Blog</h2>
@@ -34,7 +33,7 @@ export default function Blog({data}){
 
 export const query = graphql`
     query{
-        allMarkdownRemark {
+        allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
             edges{
                 node{
                     id
@@ -45,6 +44,9 @@ export const query = graphql`
                     }
                 }
                 
+            }
+            group(field: frontmatter___tags){
+                tag:fieldValue
             }
         }
     }
@@ -58,4 +60,13 @@ export const query = graphql`
     <br/>               
     <span><Link to={node.frontmatter.path}> {node.frontmatter.date}</Link></span>
 </div>
+*/
+
+/*
+                        <div className="cate">
+                            カテゴリ:
+                        </div>
+                        <div className="tag">
+                            タグ:
+                        </div>
 */

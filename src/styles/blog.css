@@ -4,6 +4,7 @@ article{
     border-left: solid 10px #ffb78a;
     border-bottom: solid 2px #000;
     border-right: solid 4px #000;
+    background-color: #fff;
 }
 
 a{
@@ -11,7 +12,18 @@ a{
     color: #000;
 }
 
+
 footer{
     text-align: right;
     color:gray;
+}
+
+.tag{
+    text-align: right;
+    color:#000;
+}
+
+.cate{
+    text-align: right;
+    color:#000;
 }

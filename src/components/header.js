@@ -1,5 +1,5 @@
 import React from "react"
-import { graphql, Link, useStaticQuery } from "gatsby"
+import {Link} from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
 import "../styles/header.css"
 import { siteMetadata } from "../../gatsby-config"
@@ -7,8 +7,7 @@ import { siteMetadata } from "../../gatsby-config"
 export default function Header(){
 
     return(
-        <header>
-            
+        <header>            
             <Link to ="/" style={{textDecoration: 'none'}}>
                 <div className="title">
                     <div className="logo-image">
