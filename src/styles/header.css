@@ -16,3 +16,23 @@
     background-color: #ffb78a;
     color: #fff;
 }
+
+@media (max-width: 890px) {
+.title{
+    padding-left: 0%;
+}
+}
+
+@media (max-width: 500px) {
+.title{
+    position: relative;
+    padding-left:0%;
+    padding-right: 0%;
+    display:flex;
+    font-size: 2rem;
+}
+.logo-image{
+    width: 15%;
+    top: auto;
+}
+}

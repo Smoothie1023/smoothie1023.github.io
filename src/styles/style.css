@@ -69,3 +69,13 @@
     height: 100px;
   
 }
+@media (max-width: 910px) {
+    
+}
+
+@media (max-width: 500px) {
+#item
+{
+    width: 100px;
+}
+}

@@ -1,0 +1,10 @@
+.mainContent
+{
+    background-color: white;
+}
+
+h1{
+    border-left: solid 5px #ffb78a;
+    border-bottom: solid 2px #000;
+    border-right: solid 4px #000;
+}
