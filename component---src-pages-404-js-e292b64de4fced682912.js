@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkgatsby_starter_hello_world=self.webpackChunkgatsby_starter_hello_world||[]).push([[883],{429:function(e,t,n){n.r(t),n.d(t,{default:function(){return u}});var l=n(7294),r=n(1597),a=n(1977);function u(){return l.createElement(a.Z,null,l.createElement("div",{className:"not-found-message"},l.createElement("h1",null,"404 Not Found..."),l.createElement(r.Link,{to:"/"},"トップページに戻る")))}}}]);
+//# sourceMappingURL=component---src-pages-404-js-e292b64de4fced682912.js.map
