@@ -2,11 +2,7 @@
 path: '/blogs/markdown-test'
 date: 2022-07-29
 title: 'マークダウンテスト'
-cate:
-    - category
-tags: 
-    - test
-    - wow
+tags: ["test","tagtest"]
 
 ---
 ***

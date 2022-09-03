@@ -1,8 +1,9 @@
 import React from 'react';
 import Helmet from 'react-helmet';
-import { graphql} from 'gatsby';
+import {Link , graphql} from 'gatsby';
 import Layout from '../components/layout';
 import "../styles/post.css"
+import kebabCase from "lodash/kebabCase"
 
 
 export default function Template({data}){
@@ -13,6 +14,15 @@ export default function Template({data}){
             <div className='mainContent'>
                 <Helmet title={`スムージーの備忘録 - ${post.frontmatter.title}`}/>
                 <h1>{post.frontmatter.title}</h1>
+                <div>
+                    {post.frontmatter.tags && post.frontmatter.tags.length > 0 && post.frontmatter.tags.map(tag=>{
+                        return(
+                            <Link to={`/tags/${kebabCase(tag)}/`}itemProp="url">
+                                <button>{tag}</button>
+                            </Link>
+                        )
+                    })}
+                </div>
                 <div dangerouslySetInnerHTML={{__html: post.html}}/>
             </div>
         </Layout>
@@ -27,7 +37,6 @@ export const postQuery = graphql`
                 date(formatString: "MMMM DD,YYYY")
                 path
                 title
-                cate
                 tags
             }
         }

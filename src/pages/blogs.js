@@ -2,6 +2,7 @@ import React from "react"
 import Layout from "../components/layout"
 import "../styles/blog.css"
 import { graphql ,Link} from 'gatsby';
+import kebabCase from "lodash/kebabCase"
 /*import { siteMetadata } from "../../gatsby-config"*/
 
 export default function Blog({data}){
@@ -17,8 +18,17 @@ export default function Blog({data}){
                         <h2>
                              {node.frontmatter.title}
                         </h2>
+                        <div>
+                            {node.frontmatter.tags && node.frontmatter.tags.length > 0 && node.frontmatter.tags.map(tag=>{
+                            return(
+                                <Link to={`/tags/${kebabCase(tag)}/`}itemProp="url">
+                                    <button>{tag}</button>
+                                </Link>
+                                )
+                            })}
+                        </div>
                     </header>
-                    <footer>
+                    <footer>                    
                         {node.frontmatter.date}
                     </footer>
                     </Link>
@@ -41,6 +51,7 @@ export const query = graphql`
                         date(formatString: "YYYY/MM/DD")
                         path
                         title
+                        tags
                     }
                 }
                 
