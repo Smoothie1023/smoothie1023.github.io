@@ -1,6 +1,6 @@
 import React from "react"
 import Layout from "../components/layout"
-import "../styles/blog.css"
+import Style from "../styles/blog.css"
 import { graphql ,Link} from 'gatsby';
 import kebabCase from "lodash/kebabCase"
 /*import { siteMetadata } from "../../gatsby-config"*/
@@ -8,7 +8,7 @@ import kebabCase from "lodash/kebabCase"
 export default function Blog({data}){
     return(
         <Layout>
-            <h2 className="subTitle">Blog</h2>
+            <h2 className="headline">ブログ記事一覧</h2>
             <div>
             {data.allMarkdownRemark.edges.map(({node},index)=>(
                 <div id={index}>

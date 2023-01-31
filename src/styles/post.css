@@ -1,12 +1,8 @@
 .mainContent
 {
+    margin: 0 auto;
+    max-width: 1080px;
     background-color: white;
-}
-
-h1{
-    border-left: solid 5px #ffb78a;
-    border-bottom: solid 2px #000;
-    border-right: solid 4px #000;
 }
 
 button{
@@ -20,4 +16,37 @@ button{
 }
 button:hover{
     background-color: darkgrey;
+}
+
+.tags:hover{
+    background-color: #ddd;
+    text-decoration:underline;
+}
+
+.tags
+{
+    margin-right: 5px;
+    background-color: #eee;
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+.link
+{
+    border-bottom: solid 2px black;
+    background-color: #eee;
+}
+.link:hover
+{
+    background-color: #ddd;
+}
+
+blockquote
+{
+    background-color: #f9f9f9;
+    border-left: 10px solid #ccc;
+    margin: 1.5em 10px;
+    padding: 0.5em 10px;
+    quotes: "\201C""\201D""\2018""\2019";
+    color: #666;
 }

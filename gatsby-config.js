@@ -47,7 +47,7 @@ module.exports = {
       options:{
         path:`${__dirname}/src/pages`,
         name:'pages',
-      }
+      },
     },
     {
     resolve:`gatsby-plugin-nprogress`,
@@ -72,7 +72,7 @@ module.exports = {
         name:'スムージーの備忘録',
         short_name:"スムージーの備忘録",
         start_url:"/",
-        background_color:'#fff',
+        background_color:'#F5F5F5',
         theme_color: `#ffb78a`,
         display:'browser',
         icons:[

@@ -4,35 +4,17 @@
     width: 70px;
     display: inline-block;
 }
-
-
-.title{
-    display: inline-block;
+.header{
+    width:100%;
+    text-align: center;
+    background-color: #ffb78a;
     border-bottom:solid 2px #000;
     border-right: solid 4px #000;
-    padding-left: 10%;
-    padding-right: 30%;
-    font-size: 50px;
-    background-color: #ffb78a;
+}
+
+.titletext{
+    position:relative;
+    display: inline-block;
+    font-size: 5vmin;
     color: #fff;
-}
-
-@media (max-width: 890px) {
-.title{
-    padding-left: 0%;
-}
-}
-
-@media (max-width: 500px) {
-.title{
-    position: relative;
-    padding-left:0%;
-    padding-right: 0%;
-    display:flex;
-    font-size: 2rem;
-}
-.logo-image{
-    width: 15%;
-    top: auto;
-}
 }

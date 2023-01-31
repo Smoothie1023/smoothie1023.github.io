@@ -1,8 +1,29 @@
 .not-found-message{
     text-align: center;
+    background-color: white;
+
 }
 .not-found-image{
     width: 100%;
-    height: auto;
+    height: auto;    
+}
+
+.returnTop
+{
+    display:inline-block;
+    position: relative;
+    margin-bottom: 10px;
+    background-color: #fff;
+    transition: 0.3s ease-in-out;
+    border-radius: 5px;
+    box-shadow: 3px 3px 5px;
     
+    transition: 0.2s ease-in-out;
+    z-index:0;
+
+}
+
+.returnTop:hover
+{
+    background-color: #eee;
 }

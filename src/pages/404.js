@@ -9,7 +9,9 @@ export default function NotFound(){
         <Layout>
             <div className="not-found-message">
                 <h1>404 Not Found...</h1>
-                <Link to="/">トップページに戻る</Link>
+                お探しのページが見つかりませんでした。<br/>
+                URLが間違っているか、ページが削除された可能性があります。<br/>
+                <Link className="returnTop" to="/">←トップページに戻る</Link>
             </div>
         </Layout>
     )

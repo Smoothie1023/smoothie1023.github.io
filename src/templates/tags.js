@@ -1,17 +1,21 @@
 import React from "react";
 import { Link, graphql} from "gatsby"
+import Styles from "../styles/tags.css"
 import Layout from "../components/layout";
 import kebabCase from "lodash/kebabCase"
 
-const Tags=({pageContext,data})=>{
+export default function Tags({pageContext,data}){
 
     const {tag} = pageContext;
 
     return (
     <Layout>
-      <h1>
-        {tag}タグの記事一覧
-      </h1>
+      <div className="headline">
+        <h1>
+          {tag}
+        </h1>
+      </div>
+      
       <div>
         {data.allMarkdownRemark.nodes.map((node)=>(
           <div>
@@ -40,14 +44,14 @@ const Tags=({pageContext,data})=>{
         ))}
       </div>
       <div>
-        <Link to="../../blogs">記事一覧ページ</Link>
+        <Link className="returnPostPage" to="../../blogs">←記事一覧</Link>
         
       </div>
     </Layout>
   )
 }
 
-export default Tags
+
 
 export const pageQuery = graphql`
 query ($tag: String) {
