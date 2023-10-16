@@ -18,17 +18,22 @@ button:hover{
     background-color: darkgrey;
 }
 
-.tags:hover{
+.tags_post:hover{
     background-color: #ddd;
     text-decoration:underline;
 }
 
-.tags
+.tags_post
 {
-    margin-right: 5px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    padding-inline: 10px;
     background-color: #eee;
     border-radius: 5px;
+    border: solid 2px #000;
     font-size: 20px;
+    display:inline-block;
+    flex-wrap: wrap;
 }
 
 .link

@@ -25,9 +25,23 @@ footer{
     color:gray;
 }
 
-.tag{
-    text-align: right;
+.tags_blogs{
     color:#000;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    padding-inline: 10px;
+    background-color: #eee;
+    font-size: 20px;    
+    border: solid 2px #000;
+    border-radius: 5px;
+    display:inline-block;
+    flex-wrap: wrap;
+}
+
+.tags_blogs:hover{
+    background-color: #ddd;
+    border-radius: #000;
+    text-decoration:underline;
 }
 
 .cate{

@@ -17,7 +17,7 @@ export default function Template({data}){
                 <div>
                     {post.frontmatter.tags && post.frontmatter.tags.length > 0 && post.frontmatter.tags.map(tag=>{
                         return(
-                            <Link className='tags' to={`/tags/${kebabCase(tag)}/`}itemProp="url">
+                            <Link className='tags_post' to={`/tags/${kebabCase(tag)}/`}itemProp="url">
                                     {tag}
                             </Link>
                         )

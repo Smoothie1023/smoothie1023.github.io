@@ -32,9 +32,23 @@ footer{
     color:gray;
 }
 
-.tag{
-    text-align: right;
+.tags_tags{
     color:#000;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    padding-inline: 10px;
+    background-color: #eee;
+    font-size: 20px;    
+    border: solid 2px #000;
+    border-radius: 5px;
+    display:inline-block;
+    flex-wrap: wrap;
+}
+
+.tags_tags:hover{
+    background-color: #ddd;
+    border-radius: #000;
+    text-decoration:underline;
 }
 
 .returnPostPage
@@ -50,9 +64,16 @@ footer{
     z-index:0;
     
 }
+.returnPostPage_parent
+{
+    display: flex;
+    justify-content: center;
+}
+
 .returnPostPage:hover
 {
     background-color: #eee;
     /*color: black;*/
 
 }
+

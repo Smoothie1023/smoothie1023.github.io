@@ -28,8 +28,8 @@ export default function Tags({pageContext,data}){
               <div>
                 {node.frontmatter.tags && node.frontmatter.tags.length > 0 && node.frontmatter.tags.map(tag=>{
                   return(
-                    <Link to={`/tags/${kebabCase(tag)}/`}itemProp="url">
-                      <button>{tag}</button>
+                    <Link  className='tags_tags' to={`/tags/${kebabCase(tag)}/`}itemProp="url">
+                      {tag}
                     </Link>
                     )
                   })}
@@ -43,7 +43,7 @@ export default function Tags({pageContext,data}){
           </div>
         ))}
       </div>
-      <div>
+      <div className="returnPostPage_parent">
         <Link className="returnPostPage" to="../../blogs">←記事一覧</Link>
         
       </div>
