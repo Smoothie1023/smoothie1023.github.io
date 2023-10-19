@@ -9,7 +9,7 @@ module.exports = {
     siteName:'スムージーの備忘録',
     siteDescription:'ポートフォリオ兼得た知見をまとめるブログ',
     siteAuthor:'Smoothie1023',
-    siteUrl:'https://blog.ryukey.net/'
+    siteUrl:'https://smoothie1023.github.io'
   },
   /* Your site config here */
   plugins: [

@@ -10,9 +10,9 @@ export default function Header(){
         <header>            
             <Link to ="/" style={{textDecoration: 'none'}}>
                 <div className="header">
-                <div className="titletext">
-                    {siteMetadata.siteName}
-                </div>
+                    <div className="titletext">
+                        {siteMetadata.siteName}
+                    </div>
                 </div>
             </Link>
         </header>
