@@ -43,7 +43,7 @@ export default function Blog({data}){
 
 export const query = graphql`
     query{
-        allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
+        allMarkdownRemark(sort: {frontmatter: {date: DESC}}) {
             edges{
                 node{
                     id
@@ -56,7 +56,7 @@ export const query = graphql`
                 }
                 
             }
-            group(field: frontmatter___tags){
+            group(field: {frontmatter: {tags: SELECT}}) {
                 tag:fieldValue
             }
         }
