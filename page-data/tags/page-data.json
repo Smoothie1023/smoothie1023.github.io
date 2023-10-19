@@ -1,1 +1,1 @@
-{"componentChunkName":"component---src-pages-tags-js","path":"/tags","result":{"data":{"allMarkdownRemark":{"totalCount":2,"nodes":[{"frontmatter":{"tags":["test"]}},{"frontmatter":{"tags":["test","tagtest"]}}]}},"pageContext":{}},"staticQueryHashes":[],"slicesMap":{}}
+{"componentChunkName":"component---src-pages-tags-js","path":"/tags","result":{"data":{"allMarkdownRemark":{"totalCount":2,"nodes":[{"frontmatter":{"tags":["test","tagtest"]}},{"frontmatter":{"tags":["test"]}}]}},"pageContext":{}},"staticQueryHashes":[],"slicesMap":{}}
