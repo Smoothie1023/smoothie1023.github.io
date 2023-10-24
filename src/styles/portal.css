@@ -18,10 +18,10 @@
 
 .LinkButton{
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    row-gap: 10px;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 30px;
     column-gap: 0px;
-    place-items:center;
+    place-items: center;
 }
 
 .button{

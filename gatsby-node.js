@@ -41,7 +41,7 @@ exports.createPages = async ({actions ,graphql})=>{
         })
     })
 
-    const PRE_PAGE = 5;
+    const PRE_PAGE = 10;
     const TOTAL_POST = result.data.allMarkdownRemark.totalCount;
     const POST_PAGE = Math.ceil(TOTAL_POST/PRE_PAGE);
     for(let i = 0;i<POST_PAGE;i++){

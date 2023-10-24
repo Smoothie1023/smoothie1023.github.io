@@ -1,13 +1,26 @@
-li{
+li.pagination{
     display: inline-block;
-    background-color: deepskyblue;
-    font-size: 24px;
-    border-radius: 10px;
-    margin: 10px;
-    text-align: center;
 }
-ul{
+ul.pagination{
     width: 80%;
     margin: 0 auto;
     max-width: 600px;
+}
+.pagination_button
+{
+    margin-right: 20px;
+    margin-top: 10px;
+    padding-inline: 10px;
+    background-color: white;
+    border-radius: 20px;
+    border: solid 2px #000;
+    font-size: 20px;
+    display:inline-block;
+    flex-wrap: wrap;
+}
+
+.pagination_button:hover
+{
+    background-color: #ffb78a;
+    text-decoration:underline;
 }

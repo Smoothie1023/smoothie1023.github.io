@@ -3,6 +3,7 @@ import { Link, graphql} from "gatsby"
 import Styles from "../styles/tags.css"
 import Layout from "../components/layout";
 import kebabCase from "lodash/kebabCase"
+import Helmet from 'react-helmet';
 
 export default function Tags({pageContext,data}){
 
@@ -10,9 +11,13 @@ export default function Tags({pageContext,data}){
 
     return (
     <Layout>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>{`スムージーの備忘録 - ${tag} -`}  </title>
+      </Helmet>
       <div className="headline">
         <h1>
-          {tag}
+          タグ:{tag}の記事一覧
         </h1>
       </div>
       
@@ -45,7 +50,6 @@ export default function Tags({pageContext,data}){
       </div>
       <div className="returnPostPage_parent">
         <Link className="returnPostPage" to="../../blogs">←記事一覧</Link>
-        
       </div>
     </Layout>
   )

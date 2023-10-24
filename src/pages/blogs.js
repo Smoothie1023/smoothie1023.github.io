@@ -6,7 +6,7 @@ import kebabCase from "lodash/kebabCase"
 import { Pagination } from "../components/pagination";
 /*import { siteMetadata } from "../../gatsby-config"*/
 
-export default function Blog({data}){
+export default function Blog({data,pageContext}){
     return(
         <Layout>
             <h2 className="headline">ブログ記事一覧</h2>
@@ -44,7 +44,7 @@ export default function Blog({data}){
 }
 
 export const query = graphql`
-    query($limit: Int = 5, $skip: Int = 0){
+    query($limit: Int = 10, $skip: Int = 0){
         allMarkdownRemark(limit: $limit, skip: $skip,sort: {frontmatter: {date: DESC}}) {
             totalCount
             edges{

@@ -1,9 +1,3 @@
-.logo-image{
-    position:relative;
-    top:3px;
-    width: 70px;
-    display: inline-block;
-}
 .header{
     width:100%;
     text-align: center;
@@ -17,4 +11,14 @@
     display: inline-block;
     font-size: 5vmin;
     color: #fff;
+}
+
+@media (max-width: 500px) {
+    .header{
+        height: auto;
+        width: 100%;
+    }
+    .titletext{
+        font-size: 8vmin;
+    }
 }

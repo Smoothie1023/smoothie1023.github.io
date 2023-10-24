@@ -17,7 +17,7 @@ export default function Template({data}){
         <Layout>
             <div className='mainContent'>
                 <Helmet>
-                    <title>{`スムージーの備忘録 - ${post.frontmatter.title} -`} -</title>
+                    <title>{`スムージーの備忘録 - ${post.frontmatter.title} -`}</title>
                     <meta property="og.type" content="article" />
                     <meta property="og:url" content={location.pathname} />
                     <meta property="og:title" content={post.frontmatter.title} />
@@ -46,6 +46,9 @@ export default function Template({data}){
                     })}
                 </div>
                 <div dangerouslySetInnerHTML={{__html: post.html}}/>
+            </div>
+            <div className="returnPostPage_parent">
+                <Link className="returnPostPage" to="../../blogs">←記事一覧</Link>
             </div>
         </Layout>
     )
