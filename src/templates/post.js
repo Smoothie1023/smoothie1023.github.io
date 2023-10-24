@@ -12,7 +12,7 @@ export default function Template({data}){
     const {markdownRemark: post}=data;
     const location = useLocation();
     //const post = data.markdownRemark;
-    const cardPath = siteMetadata.siteUrl+post.frontmatter.cardImage.publicURL;
+    const cardPath = `${siteMetadata.siteUrl}${post.frontmatter.cardImage.publicURL}`;
     return (
         <Layout>
             <div className='mainContent'>
@@ -25,7 +25,6 @@ export default function Template({data}){
                     <meta property="og:image:width" content="1200" />
                     <meta property="og:image:height" content="630" />
                     <meta property="og:description" content={siteMetadata.siteDescription} />
-
                     <meta name="twitter:card" content="summary_large_image" />
                     <meta name="description" content={siteMetadata.siteDescription} />
                     <meta name="twitter:site" content="@Smoothie1023" />

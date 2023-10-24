@@ -1,8 +1,9 @@
 import React from "react"
 import Layout from "../components/layout"
-import Style from "../styles/blog.css"
+import "../styles/blog.css"
 import { graphql ,Link} from 'gatsby';
 import kebabCase from "lodash/kebabCase"
+import { Pagination } from "../components/pagination";
 /*import { siteMetadata } from "../../gatsby-config"*/
 
 export default function Blog({data}){
@@ -36,14 +37,16 @@ export default function Blog({data}){
                 </div>
             ))}
             </div>
+            <Pagination totalCount={data.allMarkdownRemark.totalCount}/>
             
         </Layout>
     )
 }
 
 export const query = graphql`
-    query{
-        allMarkdownRemark(sort: {frontmatter: {date: DESC}}) {
+    query($limit: Int = 5, $skip: Int = 0){
+        allMarkdownRemark(limit: $limit, skip: $skip,sort: {frontmatter: {date: DESC}}) {
+            totalCount
             edges{
                 node{
                     id

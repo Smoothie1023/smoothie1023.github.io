@@ -1,0 +1,13 @@
+li{
+    display: inline-block;
+    background-color: deepskyblue;
+    font-size: 24px;
+    border-radius: 10px;
+    margin: 10px;
+    text-align: center;
+}
+ul{
+    width: 80%;
+    margin: 0 auto;
+    max-width: 600px;
+}
