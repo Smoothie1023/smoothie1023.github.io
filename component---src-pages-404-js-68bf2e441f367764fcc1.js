@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunk_=self.webpackChunk_||[]).push([[883],{429:function(e,n,t){t.r(n),t.d(n,{default:function(){return a}});var l=t(7294),r=t(1883),u=t(1977);function a(){return l.createElement(u.Z,null,l.createElement("div",{className:"not-found-message"},l.createElement("h1",null,"404 Not Found..."),"お探しのページが見つかりませんでした。",l.createElement("br",null),"URLが間違っているか、ページが削除された可能性があります。",l.createElement("br",null),l.createElement(r.Link,{className:"returnTop",to:"/"},"←トップページに戻る")))}}}]);
+//# sourceMappingURL=component---src-pages-404-js-68bf2e441f367764fcc1.js.map
