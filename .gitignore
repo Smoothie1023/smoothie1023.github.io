@@ -67,3 +67,6 @@ yarn-error.log
 .pnp.js
 # Yarn Integrity file
 .yarn-integrity
+
+# Google　アナリティクスの色々があるため対象外
+gatsby-config.js
