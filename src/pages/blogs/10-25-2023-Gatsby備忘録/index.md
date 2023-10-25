@@ -23,7 +23,7 @@ description: 'GatsbyでGitHub Pagesにデプロイするときの備忘録'
 
 ### 解決方法
 
-publicフォルダー内にCNAMEファイルを作成し、独自ドメインを記述する。
+staticフォルダー内にCNAMEファイルを作成し、独自ドメインを記述する。
 <a href="https://github.com/tschaub/gh-pages/issues/213" class="link">参考サイト</a>
 
 ***
