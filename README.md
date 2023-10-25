@@ -9,3 +9,21 @@
 
 ## ライセンス
 ソースコードは[0BSD](https://opensource.org/licenses/0BSD)ライセンスです。
+
+## 備忘録
+ビルドコマンド
+```
+npx gatsby build --prefix-paths
+```
+キャッシュクリアコマンド
+```
+npx gatsby clean
+```
+テストコマンド
+```
+npx gatsby develop -H 0.0.0.0
+```
+公開コマンド
+```
+npx gh-pages -d public
+```
