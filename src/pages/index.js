@@ -2,11 +2,14 @@ import React from "react"
 import Layout from "../components/layout"
 
 import "../styles/portal.css"
-
+import { siteMetadata } from "../../gatsby-config"
+import { useLocation } from "@reach/router"
+import SEOHead from "../components/seo"
 
 export default function Home() {
+  const location = useLocation();
   return (
-    <Layout>
+    <Layout url={location.pathname}>
       <h2 className="Headline">
         About
       </h2>

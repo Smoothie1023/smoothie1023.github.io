@@ -1,9 +1,10 @@
 ---
-path: '/blogs/2023-10-20'
+path: '/blogs/greet-2023-10-20'
 date: 2023-10-20
 title: '久しぶり'
 tags: ["greet"]
 cardImage: './NoImage.png'
+description: '久しぶりに更新する'
 
 ---
 

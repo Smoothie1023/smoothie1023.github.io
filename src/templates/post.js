@@ -14,10 +14,9 @@ export default function Template({data}){
     //const post = data.markdownRemark;
     const cardPath = `${siteMetadata.siteUrl}${post.frontmatter.cardImage.publicURL}`;
     return (
-        <Layout>
+        <Layout title={post.frontmatter.title} desc={post.frontmatter.description}>
             <div className='mainContent'>
                 <Helmet>
-                    <title>{`スムージーの備忘録 - ${post.frontmatter.title} -`}</title>
                     <meta property="og.type" content="article" />
                     <meta property="og:url" content={location.pathname} />
                     <meta property="og:title" content={post.frontmatter.title} />
@@ -25,7 +24,7 @@ export default function Template({data}){
                     <meta property="og:image:width" content="1200" />
                     <meta property="og:image:height" content="630" />
                     <meta property="og:description" content={siteMetadata.siteDescription} />
-                    <meta name="twitter:card" content="summary_large_image" />
+                    <meta name="twitter:card" content="summary" />
                     <meta name="description" content={siteMetadata.siteDescription} />
                     <meta name="twitter:site" content="@Smoothie1023" />
                     <meta name="twitter:url" content={location.pathname} />
@@ -63,6 +62,7 @@ export const postQuery = graphql`
                 path
                 title
                 tags
+                description
                 cardImage{
                     publicURL
                     absolutePath

@@ -1,10 +1,10 @@
 ---
-path: '/blogs/2023-10-25'
+path: '/blogs/2023-10-25-gatsby-tips'
 date: 2023-10-25
 title: 'GatsbyでGitHub Pagesにデプロイするときの備忘録'
 tags: ["Gatsby","Tips"]
 cardImage: './gatsby.png'
-
+description: 'GatsbyでGitHub Pagesにデプロイするときの備忘録'
 ---
 # GatsbyでGitHub Pagesにデプロイするときの備忘録
 

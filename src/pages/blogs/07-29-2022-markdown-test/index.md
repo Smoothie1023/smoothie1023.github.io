@@ -1,5 +1,5 @@
 ---
-path: '/blogs/markdown-test'
+path: '/blogs/markdown-test-2022-07-29'
 date: 2022-07-29
 title: 'マークダウンテスト'
 tags: ["test","tagtest"]

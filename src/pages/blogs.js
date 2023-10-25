@@ -4,11 +4,14 @@ import "../styles/blog.css"
 import { graphql ,Link} from 'gatsby';
 import kebabCase from "lodash/kebabCase"
 import { Pagination } from "../components/pagination";
-/*import { siteMetadata } from "../../gatsby-config"*/
+import { siteMetadata } from "../../gatsby-config"
+import { useLocation } from "@reach/router"
+import SEOHead from "../components/seo"
 
 export default function Blog({data,pageContext}){
+    const location = useLocation();
     return(
-        <Layout>
+        <Layout title={"ブログ記事一覧"} url={location.pathname}>
             <h2 className="headline">ブログ記事一覧</h2>
             <div>
             {data.allMarkdownRemark.edges.map(({node},index)=>(

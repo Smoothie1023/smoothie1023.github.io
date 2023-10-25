@@ -10,11 +10,7 @@ export default function Tags({pageContext,data}){
     const {tag} = pageContext;
 
     return (
-    <Layout>
-      <Helmet>
-        <meta charSet="utf-8" />
-        <title>{`スムージーの備忘録 - ${tag} -`}  </title>
-      </Helmet>
+    <Layout title={tag}>
       <div className="headline">
         <h1>
           タグ:{tag}の記事一覧
