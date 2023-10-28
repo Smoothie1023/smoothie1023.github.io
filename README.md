@@ -26,4 +26,5 @@ npx gatsby develop -H 0.0.0.0
 公開コマンド
 ```
 npx gh-pages -d public
+npx gatsby build --prefix-paths &&npx gh-pages -d public
 ```

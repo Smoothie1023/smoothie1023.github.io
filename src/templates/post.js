@@ -23,18 +23,16 @@ export default function Template({data}){
                     <meta property="og:image" content={cardPath} />
                     <meta property="og:image:width" content="1200" />
                     <meta property="og:image:height" content="630" />
-                    <meta property="og:description" content={siteMetadata.siteDescription} />
+                    <meta property="og:description" content={post.frontmatter.description} />
                     <meta name="twitter:card" content="summary" />
-                    <meta name="description" content={siteMetadata.siteDescription} />
                     <meta name="twitter:site" content="@Smoothie1023" />
                     <meta name="twitter:url" content={location.pathname} />
                     <meta name="twitter:title" content={post.frontmatter.title} />
-                    <meta name="twitter:description" content={siteMetadata.siteDescription} />
+                    <meta name="twitter:description" content={post.frontmatter.description} />
                     <meta name="twitter:image" content={cardPath} />
 
                 </Helmet>
                 <h1>{post.frontmatter.title}</h1>
-                <h2></h2>
                 <div>
                     {post.frontmatter.tags && post.frontmatter.tags.length > 0 && post.frontmatter.tags.map(tag=>{
                         return(
