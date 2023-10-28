@@ -15,7 +15,9 @@ __自己責任__ でお願いします。
 # 手順
 ## 1. サービスを開く
 ![Windowsキー+Rで表示されるファイル名を指定して実行ウィンドウにservice.mscを入力](./filerun.png)
+
 `Windowsキー+R`で表示されるファイル名を指定して実行ウィンドウに`service.msc`を入力しOKを押す
+
 ![サービスウィンドウ](./servicemsc.png)
 
 ## 2. Wacom Professional Serviceを開始する
