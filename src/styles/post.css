@@ -8,7 +8,7 @@
 
 button{
     color:#000;
-    background-color: rgb(228, 228, 228);
+    background-color: #e4e4e4;
     margin-right: 5px;
     margin-left: 5px;
     border: none;
@@ -16,7 +16,7 @@ button{
     
 }
 button:hover{
-    background-color: darkgrey;
+    background-color: #a9a9a9;
 }
 
 .tags_post:hover{
@@ -35,16 +35,18 @@ button:hover{
     font-size: 20px;
     display:inline-block;
     flex-wrap: wrap;
+    text-decoration: none;
+    color: #000;
 }
 
-.link
-{
-    border-bottom: solid 2px black;
-    background-color: #eee;
+.link{
+    text-decoration: none;
+    color: #688ec7;
 }
 .link:hover
 {
-    background-color: #ddd;
+    text-decoration: underline;
+    color: #4c6ea1;
 }
 
 blockquote
@@ -55,4 +57,20 @@ blockquote
     padding: 0.5em 10px;
     quotes: "\201C""\201D""\2018""\2019";
     color: #666;
+}
+
+@media (prefers-color-scheme: dark) {
+    .mainContent
+    {
+    margin: 0 auto;
+    max-width: 1080px;
+    color: #fff;
+    background-color: #222749;
+    }
+    .link{
+        color: #b3cff8;
+    }
+    .link:hover{
+        color: #8fa7ca;
+    }
 }

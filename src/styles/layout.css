@@ -27,4 +27,11 @@ html{
     padding-right: 1em;
     padding-left: 0.75em;
     border-left: 0.25em solid #f99;
-  }
+}
+
+@media (prefers-color-scheme: dark) {
+    html {
+      background-color: #171a2b;
+      color: #fff;
+    }
+}

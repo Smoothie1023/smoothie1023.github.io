@@ -4,24 +4,22 @@ import Styles from "../styles/tags.css"
 import Layout from "../components/layout";
 import kebabCase from "lodash/kebabCase"
 import Helmet from 'react-helmet';
+import { Pagination } from "../components/pagination";
+import { siteMetadata } from "../../gatsby-config"
+import { useLocation } from "@reach/router";
+import SEOHead from "../components/seo";
 
 export default function Tags({pageContext,data}){
-
+    const location = useLocation();
     const {tag} = pageContext;
-
     return (
-    <Layout title={tag}>
-      <div className="headline">
-        <h1>
-          タグ:{tag}の記事一覧
-        </h1>
-      </div>
-      
+    <Layout title={tag} url={location.pathname}>
+      <h2 className="headline">タグ:{tag}の記事一覧</h2>
       <div>
         {data.allMarkdownRemark.nodes.map((node)=>(
           <div>
           <article>
-            <Link to={node.frontmatter.path}>
+            <Link className="BlogLink" to={node.frontmatter.path}>
             <header>
               <h2>
                 {node.frontmatter.title}

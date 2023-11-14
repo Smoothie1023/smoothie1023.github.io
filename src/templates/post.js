@@ -2,7 +2,7 @@ import React from 'react';
 import Helmet from 'react-helmet';
 import {Link , graphql} from 'gatsby';
 import Layout from '../components/layout';
-import Styles from "../styles/post.css"
+import "../styles/post.css"
 import kebabCase from "lodash/kebabCase"
 import { useLocation } from "@reach/router"
 import { siteMetadata } from '../../gatsby-config';

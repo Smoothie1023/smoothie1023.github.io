@@ -17,6 +17,8 @@ ul.pagination{
     font-size: 20px;
     display:inline-block;
     flex-wrap: wrap;
+    text-decoration: none;
+    color: #000;
 }
 
 .pagination_button:hover

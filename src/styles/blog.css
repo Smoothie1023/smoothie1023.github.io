@@ -2,6 +2,7 @@ article{
     /*margin:5%;*/
     margin-left: 5%;
     margin-right: 10%;
+    margin-bottom: 10px;
     display: block;
     border-left: solid 10px #ffb78a;
     border-bottom: solid 2px #000;
@@ -13,12 +14,6 @@ article{
 article:hover{
     background-color: #eee;
 }
-
-a{
-    text-decoration-line:none;
-    color: #000;
-}
-
 
 footer{
     text-align: right;
@@ -54,6 +49,54 @@ footer{
     
     border-bottom: solid 2px #000;
     border-right: solid 4px #000;
-    background-color: white;
+    background-color: #fff;
     border-left: solid 5px #ffb78a;
+}
+
+.BlogLink{
+    text-decoration: none;
+    color: #000;
+}
+.BlogLink h2{
+    margin-top: 0;
+}
+.tags_tags{
+    text-decoration: none;
+}
+
+@media (prefers-color-scheme: dark) {
+    article{
+        background-color: #171a2b;
+        color: #fff;
+        border-top: solid 1px #fff;
+        border-bottom: solid 2px #fff;
+        border-right: solid 4px #fff;
+        border-left: solid 10px #996a4d;
+    }
+    .BlogLink{
+        text-decoration: none;
+        color: #fff;
+        transition: 0.3s ease-in-out;
+    }
+    .BlogLink:hover{
+        background-color: #eee;
+        color: #000;
+    }
+    .BlogLink h2{
+        margin-top: 0;
+    }
+    .tags_tags{
+        text-decoration: none;
+    }
+    .tags_blogs{
+        color: #fff;
+    }
+    .headline{
+        color: #fff;
+        background-color: #171a2b;
+        border: solid 1px #fff;
+        border-bottom: solid 2px #fff;
+        border-right: solid 4px #fff;
+        border-left: solid 5px #996a4d;
+    }
 }

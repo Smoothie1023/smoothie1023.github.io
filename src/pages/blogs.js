@@ -17,7 +17,7 @@ export default function Blog({data,pageContext}){
             {data.allMarkdownRemark.edges.map(({node},index)=>(
                 <div id={index}>
                 <article>
-                    <Link to={node.frontmatter.path}>
+                    <Link className="BlogLink" to={node.frontmatter.path}>
                     <header>
                         <h2>
                              {node.frontmatter.title}
