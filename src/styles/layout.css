@@ -21,6 +21,7 @@ html{
 
 .gatsby-highlight-code-line {
     background-color: #fff1eb;
+    color: #000;
     display: block;
     margin-right: -1em;
     margin-left: -1em;
