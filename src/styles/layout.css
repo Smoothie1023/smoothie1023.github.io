@@ -13,8 +13,8 @@ html{
     font-size:0.8em;
     font-weight: 600;
     display: table;
-    background-color: black;
-    color: white;
+    background-color: #000;
+    color: #fff;
     border-top-left-radius: 0.3em;
     border-top-right-radius: 0.3em;
 }
@@ -31,7 +31,7 @@ html{
 
 @media (prefers-color-scheme: dark) {
     html {
-      background-color: #171a2b;
+      background-color: #101324;
       color: #fff;
     }
 }

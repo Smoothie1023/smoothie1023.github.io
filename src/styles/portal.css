@@ -84,7 +84,7 @@
 
 @media (prefers-color-scheme: dark) {
     .Headline {
-        background-color: #171a2b;
+        background-color: #101324;
         color: #fff;
         
         border: solid 1px #fff;
@@ -93,12 +93,12 @@
         border-left: solid 5px #996a4d;
     }
     .content{
-        background-color: #171a2b;
+        background-color: #101324;
         color: #fff;
         border: solid 2px #fff;
     }
     .button a{
-        background-color: #171a2b;
+        background-color: #101324;
         color: #fff;
         border-top: solid 1px #fff  ;
         border-bottom: solid 2px #fff;

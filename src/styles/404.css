@@ -1,6 +1,6 @@
 .not-found-message{
     text-align: center;
-    background-color: white;
+    background-color: #fff;
 
 }
 .not-found-image{
@@ -26,4 +26,16 @@
 .returnTop:hover
 {
     background-color: #eee;
+}
+
+@media (prefers-color-scheme: dark) {
+    html {
+      background-color: #101324;
+      color: #fff;
+    }
+    .not-found-message{
+        text-align: center;
+        background-color: #101324;
+    
+    }
 }
