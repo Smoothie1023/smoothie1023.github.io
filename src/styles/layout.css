@@ -30,6 +30,19 @@ html{
     border-left: 0.25em solid #f99;
 }
 
+.gatsby-code-button {
+    position: absolute;
+    top: -17px ;
+    right: 10px;
+    z-index: 100;
+    background: rgb(79, 79, 107);  
+    border-radius: 10%;
+}
+.gatsby-code-button[data-tooltip]:hover:after, .gatsby-code-button[data-tooltip]:focus:after {
+    visibility: hidden;
+    display: none;
+}
+
 @media (prefers-color-scheme: dark) {
     html {
       background-color: #101324;

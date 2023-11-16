@@ -48,7 +48,12 @@ export default function Blog({data,pageContext}){
 
 export const query = graphql`
     query($limit: Int = 10, $skip: Int = 0){
-        allMarkdownRemark(limit: $limit, skip: $skip,sort: {frontmatter: {date: DESC}}) {
+        allMarkdownRemark(
+            filter: {frontmatter: {path: {regex: "/^((?!invalidate).)*$/"}}},
+            limit: $limit,
+            skip: $skip,
+            sort: {frontmatter: {date: DESC}}
+        ) {
             totalCount
             edges{
                 node{

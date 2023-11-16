@@ -59,6 +59,18 @@ blockquote
     color: #666;
 }
 
+.highlighter_yellow{
+    background:linear-gradient(transparent 70%, #ffff66 70%);
+}
+.highlighter_red{
+    background:linear-gradient(transparent 70%, #ff6666bd 70%);
+
+}
+.sticky_note{
+    border-left: solid 10px #ffb78a;
+    background-color: #ffeee4;
+}
+
 @media (prefers-color-scheme: dark) {
     .mainContent
     {
@@ -72,5 +84,10 @@ blockquote
     }
     .link:hover{
         color: #8fa7ca;
+    }
+    
+    .sticky_note{
+        border-left: solid 10px #ffb78a;
+        background-color: #996a4d;
     }
 }

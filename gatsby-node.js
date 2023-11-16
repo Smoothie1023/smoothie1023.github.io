@@ -8,7 +8,9 @@ exports.createPages = async ({actions ,graphql})=>{
     const _ = require("lodash")
 
     const result = await graphql(`{
-        allMarkdownRemark{
+        allMarkdownRemark(
+            filter: {frontmatter: {path: {regex: "/^((?!invalidate).)*$/"}}},
+        ){
             totalCount
             edges{
                 node{
@@ -19,7 +21,10 @@ exports.createPages = async ({actions ,graphql})=>{
                 }
             }
         }
-        tagsGroup:allMarkdownRemark(limit:2000){
+        tagsGroup:allMarkdownRemark(
+            limit:2000,
+            filter: {frontmatter: {path: {regex: "/^((?!invalidate).)*$/"}}}
+            ){
             group(field:{frontmatter:{tags:SELECT}}){
                 fieldValue
             }

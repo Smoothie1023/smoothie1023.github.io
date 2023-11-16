@@ -1,5 +1,5 @@
 ---
-path: '/blogs/test-2022-09-03'
+path: 'invalidate/blogs/test-2022-09-03'
 date: 2022-09-03
 title: 'テスト記事'
 tags: ["test"]

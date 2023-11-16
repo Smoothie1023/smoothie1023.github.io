@@ -1,5 +1,5 @@
 ---
-path: '/blogs/greet-2023-10-20'
+path: 'invalidate/blogs/greet-2023-10-20'
 date: 2023-10-20
 title: '久しぶり'
 tags: ["greet"]

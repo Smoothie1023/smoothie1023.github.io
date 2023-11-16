@@ -25,7 +25,7 @@ export default function Home() {
       </h2>
       <div class="LinkButton">
         <div class="button"><a id="item" href="blogs"> Blog</a></div>
-        <div class="button"><a id="item"href="https://twitter.com/Smoothie1023" target="noopener noreferrer"> Twitter</a></div>
+        <div class="button"><a id="item"href="https://twitter.com/Smoothie1023" target="noopener noreferrer"> &#x1D54F;(Twitter)</a></div>
         <div class="button"><a id="item" href="https://github.com/smoothie1023" target="noopener noreferrer"> Github</a></div>
         <div class="button"><a id="item" href="https://www.pixiv.net/users/17647757 " target="noopener noreferrer"> Pixiv</a></div>
       </div>

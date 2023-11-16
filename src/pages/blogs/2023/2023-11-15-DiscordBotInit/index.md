@@ -7,16 +7,22 @@ cardImage: './discord.png'
 description: 'Discord.pyによるDiscord Botのテンプレート'
 
 ---
-## 動作環境
+<h2 class="sticky_note">
+動作環境
+</h2>
+
 - Python 3.11.3
 - discord.py 2.3.2
 
-## Botの初期設定
-![ALT](./DiscordDeveloperSite.png "Discord Developer Site")
+<h2 class="sticky_note">
+Botの初期設定
+</h2>
+
+![Discord Developer Site](./DiscordDeveloperSite.png "Discord Developer Site")
 Discord DeveloperからのBotの作成はいずれ解説します。  
 
 Botの作成方法を理解している人はOAuth2 URL Generatorにて画像のように設定してください。  
-また、BOT PERMISSIONSについてはテストBotのため管理者をつけていますが、使用用途に合わせた必要な権限のみにしてください。  
+また、`BOT PERMISSIONS`についてはテストBotのため管理者をつけていますが、<span class="highlighter_yellow">使用用途に合わせた必要な権限のみにしてください。</span>  
 
 ファイル構成
 ```
@@ -27,22 +33,29 @@ Bot
 └── bot.py
 ```
 
-## DiscordKeysフォルダーについて
+<h2 class="sticky_note">
+DiscordKeysフォルダーについて
+</h2>
 DiscordのBotにはトークンを発行する必要があります。  
-トークンはBot作成時に <u>__一度__</u> だけ表示されます。  
-トークンが他人に知られると、その<u>Botを悪用される可能性があります。</u>   
+トークンはBot作成時に <span class="highlighter_yellow">__一度__</span> だけ表示されます。  
+トークンが他人に知られると、その<span class="highlighter_red">Botを悪用される可能性があります。</span>   
 事故防止のためにトークンは別ファイルに保存しています。 
 Gitで管理する場合フォルダーを.gitignoreに追加してください。  
 
-## guild_id.txtについて
+<h2 class="sticky_note">
+guild_id.txtについて
+</h2>
+
 guild_idはサーバーのIDです。
 スラッシュコマンドはギルドコマンドとグローバルコマンドの2種類があり、ギルドコマンドは
 サーバー内でのみ使用できるかわりに反映が早いらしい **要出典**
 
 取得方法は画像の場所にある、開発者モードをオンの状態にしてからサーバーの右クリックからサーバーIDをコピーでできます。
-![ALT](./DeveloperMode.png "設定→詳細設定→開発者モード")
+![設定→詳細設定→開発者モード](./DeveloperMode.png "設定→詳細設定→開発者モード")
 
-## DiscordBotのテンプレート
+<h2 class="sticky_note">
+DiscordBotのテンプレート
+</h2>
 
 ```python:title=bot.py
 import os
@@ -123,7 +136,7 @@ Discordのコマンドのテンプレートです。
 `description='test command'`はコマンドの説明です。
 
 ## 実行結果
-![ALT](./DiscordAutoComplete.png "コマンドの予測機能")
-![ALT](./BotTest.png "Botの実行結果")
+![コマンドの予測機能](./DiscordAutoComplete.png "コマンドの予測機能")
+![Botの実行結果](./BotTest.png "Botの実行結果")
 
 今後もDiscord Botで便利な機能を紹介できればいいなと思っています。
