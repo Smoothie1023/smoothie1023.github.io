@@ -54,6 +54,9 @@ export default function Tags({data}){
         ))}
             </div>
         </div>
+        <div className="returnPostPage_parent">
+            <Link className="returnPostPage" to="../../blogs">←記事一覧</Link>
+        </div>
         </Layout>
     )
 }

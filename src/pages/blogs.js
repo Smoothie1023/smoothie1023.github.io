@@ -41,6 +41,9 @@ export default function Blog({data,pageContext}){
             ))}
             </div>
             <Pagination totalCount={data.allMarkdownRemark.totalCount}/>
+            <div className="TagList_parent">
+                <Link className="TagList" to="/tags">タグ一覧</Link>
+            </div>
             
         </Layout>
     )
