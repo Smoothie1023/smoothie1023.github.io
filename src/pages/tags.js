@@ -3,6 +3,9 @@ import Layout from "../components/layout";
 import {graphql , Link} from 'gatsby';
 import Style from "../styles/blog.css"
 import kebabCase from "lodash/kebabCase"
+import { siteMetadata } from "../../gatsby-config"
+import { useLocation } from "@reach/router";
+import SEOHead from "../components/seo";
 
 export default function Tags({data}){
     // タグの重複を排除するためのセットを作成
@@ -31,8 +34,10 @@ export default function Tags({data}){
 
   // セットから重複のないタグのリストを取得
     const uniqueTagsList = Array.from(uniqueTags);
+
+    const location = useLocation();
     return(
-        <Layout>
+        <Layout title={"タグ一覧"} url={location.pathname}>
             <h2 className="headline">タグ一覧</h2>
             <div>
             <div>
