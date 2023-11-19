@@ -9,7 +9,7 @@ import SEOHead from "../components/seo"
 export default function Home() {
   const location = useLocation();
   return (
-    <Layout url={location.pathname}>
+    <Layout title={"スムージーの備忘録"} description={"スムージーの備忘録トップページ"} url={location.pathname}>
       <h2 className="Headline">
         About
       </h2>
