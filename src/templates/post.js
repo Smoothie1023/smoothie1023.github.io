@@ -3,9 +3,11 @@ import Helmet from 'react-helmet';
 import {Link , graphql} from 'gatsby';
 import Layout from '../components/layout';
 import "../styles/post.css"
+import "../styles/share.css"
 import kebabCase from "lodash/kebabCase"
 import { useLocation } from "@reach/router"
 import { siteMetadata } from '../../gatsby-config';
+import Share from "../components/share-button"
 
 
 export default function Template({data}){
@@ -43,6 +45,13 @@ export default function Template({data}){
                     })}
                 </div>
                 <div dangerouslySetInnerHTML={{__html: post.html}}/>
+            </div>
+            <div className="share_parent">
+                <Share
+                    title={post.frontmatter.title}
+                    url={location.href}
+                    description={post.frontmatter.description}
+                />
             </div>
             <div className="returnPostPage_parent">
                 <Link className="returnPostPage" to="../../blogs">←記事一覧</Link>

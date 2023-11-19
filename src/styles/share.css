@@ -1,0 +1,21 @@
+.share {
+    margin-top: 3.5em;
+    text-align: center;
+
+    &__title {
+        font-weight: bold;
+        font-size: 18px;
+        letter-spacing: 0.25em;
+    }
+}
+
+.social-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 10px;
+
+    &__icon:not(:last-child) {
+        margin-right: 1em;
+    }
+}
