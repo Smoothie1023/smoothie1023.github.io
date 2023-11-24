@@ -39,10 +39,13 @@ exports.createPages = async ({actions ,graphql})=>{
     const tags=result.data.tagsGroup.group
 
     posts.forEach(({node})=>{
+        console.log(node.frontmatter.path);
         createPage({
             path:node.frontmatter.path,
             component:postTemplate,
-            context:{}
+            context:{
+                path: node.frontmatter.path
+            }
         })
     })
 
