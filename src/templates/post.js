@@ -14,6 +14,8 @@ export default function Template({data}){
     const {markdownRemark: post}=data;
     const location = useLocation();
     //const post = data.markdownRemark;
+    console.log(siteMetadata.siteUrl);
+    console.log(post.frontmatter.cardImage.publicURL);
     const cardPath = `${siteMetadata.siteUrl}${post.frontmatter.cardImage.publicURL}`;
     return (
         <Layout title={post.frontmatter.title} desc={post.frontmatter.description}>
@@ -61,8 +63,8 @@ export default function Template({data}){
 }
 
 export const postQuery = graphql`
-    query BlogPostByPath($path: String!){
-        markdownRemark(frontmatter:{path:{eq: $path} }){
+    query BlogPostByPath{
+        markdownRemark{
             html
             frontmatter{
                 date(formatString: "MMMM DD,YYYY")
