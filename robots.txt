@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Sitemap: https://blog.ryukey.com/sitemap-0.xml
+Host: https://blog.ryukey.com
